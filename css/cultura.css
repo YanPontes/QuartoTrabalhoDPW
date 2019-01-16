@@ -1,0 +1,11 @@
+main section img{
+  width: 200px;
+  height: auto;
+}
+
+main section ul,li,img{
+  margin: 20px;
+}
+main section #Leão {
+  width: 100%;
+}

@@ -1,0 +1,9 @@
+
+section ul li {
+  margin: 10px;
+  text-align: center;
+}
+
+section ul li a {
+  text-decoration: none;
+}

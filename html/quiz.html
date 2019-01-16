@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/quiz.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <script src="../javascript/javascript.js"></script>
+  <title>Quiz</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html"><h1>LEÕES</h1></a>
+      <div class="btn-responsivo"><!--botao menu responsivo-->
+        <label for="btn-menu">&#9776;</label>
+        <input type="checkbox" onclick="controladoraMenu()" id="btn-menu">
+      </div>
+      <ul><!--menu normal-->
+        <li><a href="curiosidades.html" target="_blank">CURIOSIDADES</a></li>
+        <li><a href="pesquisa.html" target="_blank">PESQUISA</a></li>
+        <li><a style="color: #008000;" href="quiz.html" target="_self">QUIZ</a></li>
+        <li><a href="cultura.html" target="_blank">CULTURA</a></li>
+      </ul>
+    </nav>
+    <ul id="menu-responsivo"><!--menu responsivo-->
+      <li><a href="curiosidades.html">CURIOSIDADES</a></li>
+      <li><a href="pesquisa.html">PESQUISA</a></li>
+      <li><a href="quiz.html">QUIZ</a></li>
+      <li><a href="cultura.html">CULTURA</a></li>
+    </ul>
+  </header>
+  <main>
+    <section>
+      <h3 id="Título">Quiz</h3>
+      <img src="../img/leaorindo.jpg" alt="Leão Rindo">
+    </section>
+    <section>
+      <h2>PERGUNTAS</h2>
+      <div onmouseover="controladoraEstiloQuiz(this,'in')" onmouseout="controladoraEstiloQuiz(this,'out')">
+        <h3>Qual é a média de idade de vida de um Leão?</h3>
+        <input type="radio" id="a1" name="questao1" value="1">
+        <label for="a1">27 anos </label>
+        <input type="radio" id="b1" name="questao1" value="2">
+        <label for="b1">38 anos </label>
+        <input type="radio" id="c1" name="questao1" value="3">
+        <label for="c1" id="respCerta1">14 anos</label>
+        <input type="radio" id="d1" name="questao1" value="4">
+        <label for="d1">24 anos</label>
+      </div>
+      <div onmouseover="controladoraEstiloQuiz(this,'in')" onmouseout="controladoraEstiloQuiz(this,'out')">
+        <h3>Quantas espécies de leão existem no mundo?</h3>
+        <input type="radio" id="a2" name="questao2" value="1">
+        <label for="a2" id="respCerta2">7 espécies</label>
+        <input type="radio" id="b2" name="questao2" value="2">
+        <label for="b2">10 espécies</label>
+        <input type="radio" id="c2" name="questao2" value="3">
+        <label for="c2">12 espécies</label>
+        <input type="radio" id="d2" name="questao2" value="4">
+        <label for="d2">1 espécie</label>
+      </div>
+      <div onmouseover="controladoraEstiloQuiz(this,'in')" onmouseout="controladoraEstiloQuiz(this,'out')">
+        <h3>Quantos quilos pesa um leão adulto? </h3>
+        <input type="radio" id="a3" name="questao3" value="1">
+        <label for="a3">190 quilos</label>
+        <input type="radio" id="b3" name="questao3" value="2">
+        <label for="b3">230 quilos</label>
+        <input type="radio" id="c3" name="questao3" value="3">
+        <label for="c3" id="respCerta3">250 quilos </label>
+        <input type="radio" id="d3" name="questao3" value="4">
+        <label for="d3">280 quilos</label>
+      </div>
+      <div onmouseover="controladoraEstiloQuiz(this,'in')" onmouseout="controladoraEstiloQuiz(this,'out')">
+        <h3>Qual a atual população de leões ao redor do mundo? </h3>
+        <input type="radio" id="a4" name="questao4" value="1">
+        <label for="a4">10.000 leões </label>
+        <input type="radio" id="b4" name="questao4" value="2">
+        <label for="b4">20.000 leões </label>
+        <input type="radio" id="c4" name="questao4" value="3">
+        <label for="c4">15.000 leões</label>
+        <input type="radio" id="d4" name="questao4" value="4">
+        <label for="d4" id="respCerta4">32.000 leões</label>
+      </div>
+      <div onmouseover="controladoraEstiloQuiz(this,'in')" onmouseout="controladoraEstiloQuiz(this,'out')">
+        <h3>Quantos quilos de comida um leão precisa comer por dia? </h3>
+        <input type="radio" id="a5" name="questao5" value="1">
+        <label for="a5">30 quilos </label>
+        <input type="radio" id="b5" name="questao5" value="2">
+        <label for="b5" id="respCerta5">7 quilos </label>
+        <input type="radio" id="c5" name="questao5" value="3">
+        <label for="c5">14 quilos</label>
+        <input type="radio" id="d5" name="questao5" value="4">
+        <label for="d5">20 quilos</label>
+      </div>
+      <div onmouseover="controladoraEstiloQuiz(this,'in')" onmouseout="controladoraEstiloQuiz(this,'out')">
+        <h3>Quantos filhotes nascem em cada ninhada? </h3>
+        <input type="radio" id="a6" name="questao6" value="1">
+        <label for="a6"> 1 a 3 filhotes </label>
+        <input type="radio" id="b6" name="questao6" value="2">
+        <label for="b6">8 a 12 filhotes </label>
+        <input type="radio" id="c6" name="questao6" value="3">
+        <label for="c6">7 a 9 filhotes</label>
+        <input type="radio" id="d6" name="questao6" value="4">
+        <label for="d6" id="respCerta6">2 a 4 filhotes</label>
+      </div>
+      <div onmouseover="controladoraEstiloQuiz(this,'in')" onmouseout="controladoraEstiloQuiz(this,'out')">
+        <h3>Qual a velocidade média de um leão adulto? </h3>
+        <input type="radio" id="a7" name="questao7" value="1">
+        <label for="a7">94 km/h </label>
+        <input type="radio" id="b7" name="questao7" value="2">
+        <label for="b7" id="respCerta7">73 km/h </label>
+        <input type="radio" id="c7" name="questao7" value="3">
+        <label for="c7">66 km/h</label>
+        <input type="radio" id="d7" name="questao7" value="4">
+        <label for="d7">58 km/h</label>
+      </div>
+      <div onmouseover="controladoraEstiloQuiz(this,'in')" onmouseout="controladoraEstiloQuiz(this,'out')">
+        <h3>Qual é o período de gestação das leoas? </h3>
+        <input type="radio" id="a8" name="questao8" value="1">
+        <label for="a8" id="respCerta8">100 a 120 dias </label>
+        <input type="radio" id="b8" name="questao8" value="2">
+        <label for="b8">40 a 80 dias</label>
+        <input type="radio" id="c8" name="questao8" value="3">
+        <label for="c8">80 a 100 dias</label>
+        <input type="radio" id="d8" name="questao8" value="4">
+        <label for="d8">120 a 150 dias</label>
+      </div>
+      <div onmouseover="controladoraEstiloQuiz(this,'in')" onmouseout="controladoraEstiloQuiz(this,'out')">
+        <h3>Qual é o comprimento médio, em metros, de um leão adulto? </h3>
+        <input type="radio" id="a9" name="questao9" value="1">
+        <label for="a9">3 metros </label>
+        <input type="radio" id="b9" name="questao9" value="2">
+        <label for="b9">2,45 metros </label>
+        <input type="radio" id="c9" name="questao9" value="3">
+        <label for="c9" id="respCerta9">2 metros</label>
+        <input type="radio" id="d9" name="questao9" value="4">
+        <label for="d9">2,17 metros</label>
+      </div>
+      <div onmouseover="controladoraEstiloQuiz(this,'in')" onmouseout="controladoraEstiloQuiz(this,'out')">
+        <h3>Quantas horas por dia o Leão descansa/dorme? </h3>
+        <input type="radio" id="a10" name="questao10" value="1">
+        <label for="a10">10 horas </label>
+        <input type="radio" id="b10" name="questao10" value="2">
+        <label for="b10" id="respCerta10">19 horas </label>
+        <input type="radio" id="c10" name="questao10" value="3">
+        <label for="c10">12 horas</label>
+        <input type="radio" id="d10" name="questao10" value="4">
+        <label for="d10">7 horas</label>
+      </div>
+      <button type="button" onclick="controladoraQuiz()">CONFERIR</button>
+      <p id="acertos">Você acertou: X questões!</p>
+    </section>
+  </main>
+  <footer>
+    <h4><a href="http://bsi.uniriotec.br/bsi/index.html" target="_blank" style="none">BSI-UNIRO</a></h4>
+  </footer>
+</body>
+</html>
